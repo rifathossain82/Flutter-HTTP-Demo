@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_http_demo/Seat%20Layout%20JSON/First_Way.dart';
+import 'package:flutter_http_demo/Seat%20Layout%20JSON/Second_way.dart';
 import 'package:http/http.dart' as http;
 
 void main(){
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text('Flutter HTTP Demo'),
         ),
-        body: First_Way(),
+        body: Second_way(),
       ),
     );
   }
