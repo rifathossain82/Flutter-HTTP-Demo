@@ -17,7 +17,7 @@ class _Way_oneState extends State<Way_one> {
   var data;
   Future<void> getData()async{
     final response=await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
-
+    print(response.statusCode);
     if(response.statusCode==200){
       data=jsonDecode(response.body.toString());
     }
